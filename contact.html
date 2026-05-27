@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 - 海绵宝宝主题网站</title>
+  <meta name="description" content="海绵宝宝粉丝留言板，分享你的感动和回忆">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#mainContent" class="skip-link">跳到主要内容</a>
+
+  <!-- ========== 导航栏 ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" aria-label="主导航">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <svg class="brand-icon" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="10" fill="#FDE24F"/>
+          <rect x="6" y="6" width="24" height="24" rx="5" fill="#FFF8C4"/>
+          <circle cx="13" cy="14" r="2.5" fill="#1A759F"/>
+          <circle cx="23" cy="14" r="2.5" fill="#1A759F"/>
+          <path d="M12 22 Q18 28 24 22" stroke="#1A759F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        海绵宝宝
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="切换导航菜单">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill" aria-hidden="true"></i> 首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="characters.html"><i class="bi bi-people-fill" aria-hidden="true"></i> 人物介绍</a></li>
+          <li class="nav-item"><a class="nav-link" href="episodes.html"><i class="bi bi-collection-play-fill" aria-hidden="true"></i> 剧集列表</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images" aria-hidden="true"></i> 比奇堡图鉴</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page"><i class="bi bi-envelope-fill" aria-hidden="true"></i> 联系我们</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle-fill" aria-hidden="true"></i> 关于</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="mainContent" style="padding-top: 90px;">
+
+    <!-- ========== 页面头部 ========== -->
+    <section class="container py-4">
+      <div class="section-title">
+        <h3>联系我们</h3>
+        <p class="text-muted mt-2">在这里留下你的温暖寄语，和全球海绵宝宝粉丝一起分享感动与回忆。</p>
+      </div>
+    </section>
+
+    <!-- ========== 留言表单 ========== -->
+    <section class="container pb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card p-4">
+            <div class="card-body">
+              <h4 class="card-title mb-4"><i class="bi bi-pencil-square me-2" style="color:var(--pineapple-yellow);" aria-hidden="true"></i>写下你的寄语</h4>
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingName" placeholder="你的昵称" required>
+                      <label for="floatingName"><i class="bi bi-person" aria-hidden="true"></i> 你的昵称</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                      <label for="floatingEmail"><i class="bi bi-envelope" aria-hidden="true"></i> 电子邮箱（可选）</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" id="floatingMessage" placeholder="在这里写下海绵宝宝带给你的感动吧..." style="height:160px;" required></textarea>
+                      <label for="floatingMessage"><i class="bi bi-chat-heart" aria-hidden="true"></i> 在这里写下海绵宝宝带给你的感动吧...</label>
+                    </div>
+                  </div>
+                  <div class="col-12 text-end">
+                    <button type="submit" class="btn btn-warning btn-lg">
+                      <i class="bi bi-send-fill" aria-hidden="true"></i> 留下寄语
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 粉丝留言板 ========== -->
+    <section class="container pb-5" aria-labelledby="messageBoardTitle">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-body">
+              <h4 id="messageBoardTitle" class="card-title mb-3"><i class="bi bi-chat-dots-fill me-2" style="color:var(--coral-pink);" aria-hidden="true"></i>粉丝留言流</h4>
+              <ul class="list-group list-group-flush" id="messageList">
+                <!-- 预设留言 -->
+                <li class="list-group-item">
+                  <div class="d-flex gap-3 align-items-start">
+                    <img src="https://placehold.co/48x48/FDE24F/1A759F?text=S" alt="海绵宝宝的头像" class="rounded-circle flex-shrink-0" width="48" height="48" style="border:2px solid var(--border-soft);">
+                    <div>
+                      <div class="fw-bold" style="color:var(--ocean-blue);">海绵宝宝</div>
+                      <p class="mb-1" style="color:var(--text-secondary);">欢迎来到比奇堡！我今天又做出了最美味的蟹黄堡，好开心！</p>
+                      <small class="text-muted"><i class="bi bi-clock" aria-hidden="true"></i> 2小时前</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex gap-3 align-items-start">
+                    <img src="https://placehold.co/48x48/FF9BB5/ffffff?text=P" alt="派大星的头像" class="rounded-circle flex-shrink-0" width="48" height="48" style="border:2px solid var(--border-soft);">
+                    <div>
+                      <div class="fw-bold" style="color:var(--ocean-blue);">派大星</div>
+                      <p class="mb-1" style="color:var(--text-secondary);">派大星也想吃蟹黄堡……海绵宝宝能给我一个吗？</p>
+                      <small class="text-muted"><i class="bi bi-clock" aria-hidden="true"></i> 3小时前</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex gap-3 align-items-start">
+                    <img src="https://placehold.co/48x48/7BC67E/ffffff?text=Sq" alt="章鱼哥的头像" class="rounded-circle flex-shrink-0" width="48" height="48" style="border:2px solid var(--border-soft);">
+                    <div>
+                      <div class="fw-bold" style="color:var(--ocean-blue);">章鱼哥</div>
+                      <p class="mb-1" style="color:var(--text-secondary);">今天的安宁又被隔壁的两个傻瓜破坏了……不过，算是平静的一天。</p>
+                      <small class="text-muted"><i class="bi bi-clock" aria-hidden="true"></i> 5小时前</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex gap-3 align-items-start">
+                    <img src="https://placehold.co/48x48/A0522D/ffffff?text=Sa" alt="珊迪的头像" class="rounded-circle flex-shrink-0" width="48" height="48" style="border:2px solid var(--border-soft);">
+                    <div>
+                      <div class="fw-bold" style="color:var(--ocean-blue);">珊迪</div>
+                      <p class="mb-1" style="color:var(--text-secondary);">刚刚完成了新的发明！比奇堡的大家一定会喜欢的，海绵宝宝肯定又会第一个跑来试！</p>
+                      <small class="text-muted"><i class="bi bi-clock" aria-hidden="true"></i> 昨天</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item" id="emptyMessage" style="display:none;">
+                  <p class="text-center text-muted py-3 mb-0">还没有留言，成为第一个写下寄语的人吧！</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer pt-5 pb-4 mt-5" aria-label="页脚导航">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h6><i class="bi bi-water" aria-hidden="true"></i> 海绵宝宝主题网站</h6>
+          <p class="small">一个为海绵宝宝粉丝打造的专属社区，提供角色介绍、剧集浏览、图鉴欣赏以及粉丝互动功能。</p>
+        </div>
+        <div class="col-md-4">
+          <h6>快速导航</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i> 首页</a></li>
+            <li><a href="characters.html"><i class="bi bi-people" aria-hidden="true"></i> 人物介绍</a></li>
+            <li><a href="episodes.html"><i class="bi bi-collection-play" aria-hidden="true"></i> 剧集列表</a></li>
+            <li><a href="gallery.html"><i class="bi bi-images" aria-hidden="true"></i> 比奇堡图鉴</a></li>
+            <li><a href="contact.html"><i class="bi bi-envelope" aria-hidden="true"></i> 联系我们</a></li>
+            <li><a href="about.html"><i class="bi bi-info-circle" aria-hidden="true"></i> 关于我们</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>声明</h6>
+          <p class="small">本网站为 Web前端框架课程大作业，版权归《海绵宝宝》原作者 Stephen Hillenburg 及 Nickelodeon 所有。</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="text-center small mb-0">&copy; 2025 SpongeBob Fan Site. 比奇堡的温暖午后.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

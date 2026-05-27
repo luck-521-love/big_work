@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>剧集列表 - 海绵宝宝主题网站</title>
+  <meta name="description" content="浏览海绵宝宝全系列经典剧集，按季分类、搜索和翻阅">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#mainContent" class="skip-link">跳到主要内容</a>
+
+  <!-- ========== 导航栏 ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" aria-label="主导航">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <svg class="brand-icon" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="10" fill="#FDE24F"/>
+          <rect x="6" y="6" width="24" height="24" rx="5" fill="#FFF8C4"/>
+          <circle cx="13" cy="14" r="2.5" fill="#1A759F"/>
+          <circle cx="23" cy="14" r="2.5" fill="#1A759F"/>
+          <path d="M12 22 Q18 28 24 22" stroke="#1A759F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        海绵宝宝
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="切换导航菜单">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill" aria-hidden="true"></i> 首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="characters.html"><i class="bi bi-people-fill" aria-hidden="true"></i> 人物介绍</a></li>
+          <li class="nav-item"><a class="nav-link active" href="episodes.html" aria-current="page"><i class="bi bi-collection-play-fill" aria-hidden="true"></i> 剧集列表</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images" aria-hidden="true"></i> 比奇堡图鉴</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope-fill" aria-hidden="true"></i> 联系我们</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle-fill" aria-hidden="true"></i> 关于</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="mainContent" style="padding-top: 90px;">
+
+    <!-- ========== 面包屑导航 ========== -->
+    <section class="container pt-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">首页</a></li>
+          <li class="breadcrumb-item active" aria-current="page">剧集指南</li>
+        </ol>
+      </nav>
+    </section>
+
+    <!-- ========== 页面头部 ========== -->
+    <section class="container pb-3">
+      <div class="section-title">
+        <h3>经典剧集</h3>
+        <p class="text-muted mt-2">海绵宝宝自 1999 年开播至今，已经陪伴我们走过了十多个精彩的季数。下方按季排列，供你一一回味。</p>
+      </div>
+    </section>
+
+    <!-- ========== 搜索框 ========== -->
+    <section class="container pb-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="position-relative">
+            <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3" style="z-index:5;color:var(--text-muted);" aria-hidden="true"></i>
+            <input type="text" id="episodeSearch" class="form-control ps-5 rounded-pill" placeholder="搜索剧集标题..." aria-label="搜索剧集" style="border:2px solid var(--border-soft);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 手风琴 - 按季分组 ========== -->
+    <section class="container pb-5" aria-label="按季排列的剧集列表">
+      <div class="accordion" id="seasonsAccordion">
+
+        <!-- 第 1 季 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#season01" aria-expanded="true" aria-controls="season01">
+              <i class="bi bi-star-fill me-2" style="color:var(--pineapple-yellow);" aria-hidden="true"></i> 第一季（1999-2000）<span class="badge rounded-pill ms-2" style="background:var(--ocean-blue-light);color:var(--ocean-blue);">41 集</span>
+            </button>
+          </h2>
+          <div id="season01" class="accordion-collapse collapse show" data-bs-parent="#seasonsAccordion">
+            <div class="accordion-body">
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="急征店员">
+                  <div class="episode-card p-3"><span class="episode-number">第1集</span><div class="episode-title">急征店员 — 海绵宝宝在蟹堡王获得了厨师工作。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="海底清洁工">
+                  <div class="episode-card p-3"><span class="episode-number">第2集</span><div class="episode-title">海底清洁工 — 海绵宝宝和派大星的搞笑大扫除。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="比奇堡的派对">
+                  <div class="episode-card p-3"><span class="episode-number">第3集</span><div class="episode-title">比奇堡的派对 — 海绵宝宝举办的超级派对！</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="水母的问候">
+                  <div class="episode-card p-3"><span class="episode-number">第4集</span><div class="episode-title">水母的问候 — 海绵宝宝和派大星去抓水母的冒险。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="第一个蟹黄堡">
+                  <div class="episode-card p-3"><span class="episode-number">第5集</span><div class="episode-title">第一个蟹黄堡 — 回顾蟹黄堡的诞生史。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="吹泡泡大赛">
+                  <div class="episode-card p-3"><span class="episode-number">第6集</span><div class="episode-title">吹泡泡大赛 — 海绵宝宝展示华丽的吹泡泡技巧。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="章鱼哥的周末">
+                  <div class="episode-card p-3"><span class="episode-number">第7集</span><div class="episode-title">章鱼哥的周末 — 章鱼哥期待已久的安静周末泡汤了。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="珊迪的树屋">
+                  <div class="episode-card p-3"><span class="episode-number">第8集</span><div class="episode-title">珊迪的树屋 — 海绵宝宝第一次见到珊迪的陆地家园。</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 第 2 季 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#season02" aria-expanded="false" aria-controls="season02">
+              <i class="bi bi-star-fill me-2" style="color:var(--coral-pink);" aria-hidden="true"></i> 第二季（2000-2001）<span class="badge rounded-pill ms-2" style="background:var(--ocean-blue-light);color:var(--ocean-blue);">39 集</span>
+            </button>
+          </h2>
+          <div id="season02" class="accordion-collapse collapse" data-bs-parent="#seasonsAccordion">
+            <div class="accordion-body">
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="超大号海绵">
+                  <div class="episode-card p-3"><span class="episode-number">第1集</span><div class="episode-title">超大号海绵 — 海绵宝宝不小心变得超级巨大。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="蟹堡王的竞争">
+                  <div class="episode-card p-3"><span class="episode-number">第2集</span><div class="episode-title">蟹堡王的竞争 — 痞老板的新计划又失败了。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="朋克海绵">
+                  <div class="episode-card p-3"><span class="episode-number">第3集</span><div class="episode-title">朋克海绵 — 海绵宝宝尝试新的生活方式。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="派大星的智慧">
+                  <div class="episode-card p-3"><span class="episode-number">第4集</span><div class="episode-title">派大星的智慧 — 派大星意外获得了聪明才智。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="章鱼村的入侵">
+                  <div class="episode-card p-3"><span class="episode-number">第5集</span><div class="episode-title">章鱼村的入侵 — 一群野生章鱼涌入了比奇堡。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="蟹黄堡秘方失窃">
+                  <div class="episode-card p-3"><span class="episode-number">第6集</span><div class="episode-title">蟹黄堡秘方失窃 — 痞老板的又一次失败尝试。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="泡泡狂欢节">
+                  <div class="episode-card p-3"><span class="episode-number">第7集</span><div class="episode-title">泡泡狂欢节 — 一年一度的比奇堡泡泡庆典。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="珊迪的发明">
+                  <div class="episode-card p-3"><span class="episode-number">第8集</span><div class="episode-title">珊迪的发明 — 珊迪的新发明让整个比奇堡颠倒。</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 第 3 季 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#season03" aria-expanded="false" aria-controls="season03">
+              <i class="bi bi-star-fill me-2" style="color:var(--pineapple-yellow);" aria-hidden="true"></i> 第三季（2001-2002）<span class="badge rounded-pill ms-2" style="background:var(--ocean-blue-light);color:var(--ocean-blue);">37 集</span>
+            </button>
+          </h2>
+          <div id="season03" class="accordion-collapse collapse" data-bs-parent="#seasonsAccordion">
+            <div class="accordion-body">
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="海绵宝宝电影">
+                  <div class="episode-card p-3"><span class="episode-number">第1集</span><div class="episode-title">海绵宝宝电影 — 海绵宝宝和派大星踏上了奇幻冒险。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="巧克力大盗">
+                  <div class="episode-card p-3"><span class="episode-number">第2集</span><div class="episode-title">巧克力大盗 — 蟹堡王出现了一位神秘的巧克力小偷。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="珍珠的派对">
+                  <div class="episode-card p-3"><span class="episode-number">第3集</span><div class="episode-title">珍珠的派对 — 蟹老板为女儿珍珍准备了生日惊喜。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="鬼怪旅馆">
+                  <div class="episode-card p-3"><span class="episode-number">第4集</span><div class="episode-title">鬼怪旅馆 — 海绵宝宝和派大星在暴风雨中迷路了。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="空手道大赛">
+                  <div class="episode-card p-3"><span class="episode-number">第5集</span><div class="episode-title">空手道大赛 — 海绵宝宝和珊迪参加比奇堡空手道锦标赛。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="小蜗不见了">
+                  <div class="episode-card p-3"><span class="episode-number">第6集</span><div class="episode-title">小蜗不见了 — 海绵宝宝心爱的小蜗失踪了！</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="蟹堡王停业日">
+                  <div class="episode-card p-3"><span class="episode-number">第7集</span><div class="episode-title">蟹堡王停业日 — 蟹老板被迫关门，海绵宝宝伤心欲绝。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="海底音乐节">
+                  <div class="episode-card p-3"><span class="episode-number">第8集</span><div class="episode-title">海底音乐节 — 比奇堡举办了一场盛大的水下演唱会。</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 第 4 季（简短展开） -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#season04" aria-expanded="false" aria-controls="season04">
+              <i class="bi bi-star-fill me-2" style="color:var(--coral-pink);" aria-hidden="true"></i> 第四季 ~ 第十三季（2005-至今）<span class="badge rounded-pill ms-2" style="background:var(--ocean-blue-light);color:var(--ocean-blue);">200+ 集</span>
+            </button>
+          </h2>
+          <div id="season04" class="accordion-collapse collapse" data-bs-parent="#seasonsAccordion">
+            <div class="accordion-body">
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="海绵宝宝大电影">
+                  <div class="episode-card p-3"><span class="episode-number">2004</span><div class="episode-title">海绵宝宝大电影 — 第一部剧场版电影，海绵宝宝和派大星寻找皇冠。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="好友联盟">
+                  <div class="episode-card p-3"><span class="episode-number">2007</span><div class="episode-title">好友联盟 — 海绵宝宝和朋友们成立超级英雄联盟。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="海绵宝宝音乐剧">
+                  <div class="episode-card p-3"><span class="episode-number">2010</span><div class="episode-title">海绵宝宝音乐剧 — 百老汇风格的音乐盛宴。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="泡泡历险记">
+                  <div class="episode-card p-3"><span class="episode-number">2015</span><div class="episode-title">泡泡历险记 — 海绵宝宝被一个巨型泡泡带到空中冒险。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="深海谜案">
+                  <div class="episode-card p-3"><span class="episode-number">2020</span><div class="episode-title">深海谜案 — 蟹黄堡秘方被盗，比奇堡出动侦探队。</div></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-episode-title="第300集特别篇">
+                  <div class="episode-card p-3"><span class="episode-number">2024</span><div class="episode-title">第300集特别篇 — 海绵宝宝系列里程碑式纪念特辑。</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== 分页 ========== -->
+    <section class="container pb-5">
+      <div class="text-center mb-3" id="paginationInfo" style="color:var(--text-muted);font-size:0.9rem;"></div>
+      <nav aria-label="剧集分页导航" id="paginationContainer">
+        <!-- 由 JS 动态渲染 -->
+      </nav>
+    </section>
+
+  </main>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer pt-5 pb-4 mt-5" aria-label="页脚导航">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h6><i class="bi bi-water" aria-hidden="true"></i> 海绵宝宝主题网站</h6>
+          <p class="small">一个为海绵宝宝粉丝打造的专属社区，提供角色介绍、剧集浏览、图鉴欣赏以及粉丝互动功能。</p>
+        </div>
+        <div class="col-md-4">
+          <h6>快速导航</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i> 首页</a></li>
+            <li><a href="characters.html"><i class="bi bi-people" aria-hidden="true"></i> 人物介绍</a></li>
+            <li><a href="episodes.html"><i class="bi bi-collection-play" aria-hidden="true"></i> 剧集列表</a></li>
+            <li><a href="gallery.html"><i class="bi bi-images" aria-hidden="true"></i> 比奇堡图鉴</a></li>
+            <li><a href="contact.html"><i class="bi bi-envelope" aria-hidden="true"></i> 联系我们</a></li>
+            <li><a href="about.html"><i class="bi bi-info-circle" aria-hidden="true"></i> 关于我们</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>声明</h6>
+          <p class="small">本网站为 Web前端框架课程大作业，版权归《海绵宝宝》原作者 Stephen Hillenburg 及 Nickelodeon 所有。</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="text-center small mb-0">&copy; 2025 SpongeBob Fan Site. 比奇堡的温暖午后.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

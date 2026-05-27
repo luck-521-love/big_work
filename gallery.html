@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>比奇堡图鉴 - 海绵宝宝主题网站</title>
+  <meta name="description" content="欣赏比奇堡精彩壁纸、名场面截图和同人创作，沉浸式视觉体验">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#mainContent" class="skip-link">跳到主要内容</a>
+
+  <!-- ========== 导航栏 ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" aria-label="主导航">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <svg class="brand-icon" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="10" fill="#FDE24F"/>
+          <rect x="6" y="6" width="24" height="24" rx="5" fill="#FFF8C4"/>
+          <circle cx="13" cy="14" r="2.5" fill="#1A759F"/>
+          <circle cx="23" cy="14" r="2.5" fill="#1A759F"/>
+          <path d="M12 22 Q18 28 24 22" stroke="#1A759F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        海绵宝宝
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="切换导航菜单">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill" aria-hidden="true"></i> 首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="characters.html"><i class="bi bi-people-fill" aria-hidden="true"></i> 人物介绍</a></li>
+          <li class="nav-item"><a class="nav-link" href="episodes.html"><i class="bi bi-collection-play-fill" aria-hidden="true"></i> 剧集列表</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html" aria-current="page"><i class="bi bi-images" aria-hidden="true"></i> 比奇堡图鉴</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope-fill" aria-hidden="true"></i> 联系我们</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle-fill" aria-hidden="true"></i> 关于</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="mainContent" style="padding-top: 90px;">
+
+    <!-- ========== 面包屑导航 ========== -->
+    <section class="container pt-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">首页</a></li>
+          <li class="breadcrumb-item active" aria-current="page">比奇堡图鉴</li>
+        </ol>
+      </nav>
+    </section>
+
+    <!-- ========== 页面头部 ========== -->
+    <section class="container pb-3">
+      <div class="section-title">
+        <h3>比奇堡图鉴</h3>
+        <p class="text-muted mt-2">官方壁纸、名场面截图与粉丝同人创作。点击任意图片可放大查看。</p>
+      </div>
+    </section>
+
+    <!-- ========== 筛选按钮组 ========== -->
+    <section class="container pb-4">
+      <div class="d-flex justify-content-center">
+        <div class="btn-group" role="group" aria-label="图库分类筛选">
+          <button type="button" class="btn btn-outline-primary active" data-gallery-filter="all">全部</button>
+          <button type="button" class="btn btn-outline-primary" data-gallery-filter="wallpaper">官方壁纸</button>
+          <button type="button" class="btn btn-outline-primary" data-gallery-filter="scene">名场面截图</button>
+          <button type="button" class="btn btn-outline-primary" data-gallery-filter="fanart">同人创作</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 图片网格 ========== -->
+    <section class="container pb-5" aria-label="图片画廊">
+      <div class="row g-4">
+
+        <!-- 壁纸 -->
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="wallpaper">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/1A759F/FDE24F?text=Bikini+Bottom+Sunset" class="card-img-top" alt="比奇堡黄昏 — 温暖的金色阳光穿过海水洒在菠萝屋上" data-lightbox="https://placehold.co/1200x900/1A759F/FDE24F?text=Bikini+Bottom+Sunset" data-lightbox-alt="比奇堡黄昏">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">比奇堡的黄昏</p></div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="wallpaper">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/135D7F/FDE24F?text=Coral+Reef+View" class="card-img-top" alt="珊瑚礁海景 — 比奇堡最美丽的风景线" data-lightbox="https://placehold.co/1200x900/135D7F/FDE24F?text=Coral+Reef+View" data-lightbox-alt="珊瑚礁海景">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">珊瑚礁海景</p></div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="wallpaper">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/0D4A63/FDE24F?text=Jellyfish+Fields" class="card-img-top" alt="水母田 — 海绵宝宝和派大星最爱去的地方" data-lightbox="https://placehold.co/1200x900/0D4A63/FDE24F?text=Jellyfish+Fields" data-lightbox-alt="水母田">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">水母田风光</p></div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="wallpaper">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/1A759F/FFEB3B?text=Krusty+Krab" class="card-img-top" alt="蟹堡王餐厅 — 全比奇堡最好吃的美味" data-lightbox="https://placehold.co/1200x900/1A759F/FFEB3B?text=Krusty+Krab" data-lightbox-alt="蟹堡王">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">蟹堡王正门</p></div>
+          </article>
+        </div>
+
+        <!-- 名场面 -->
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="scene">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/FDE24F/1A759F?text=I%27m+Ready!" class="card-img-top" alt="海绵宝宝高喊'我准备好了！'的经典场景" data-lightbox="https://placehold.co/1200x900/FDE24F/1A759F?text=I%27m+Ready!" data-lightbox-alt="我准备好了！">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">"我准备好了！"</p></div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="scene">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/FF9BB5/ffffff?text=Best+Friends" class="card-img-top" alt="海绵宝宝和派大星的友情时光" data-lightbox="https://placehold.co/1200x900/FF9BB5/ffffff?text=Best+Friends" data-lightbox-alt="最好的朋友">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">最要好的朋友</p></div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="scene">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/7BC67E/ffffff?text=Squidward+Art" class="card-img-top" alt="章鱼哥正在进行艺术创作" data-lightbox="https://placehold.co/1200x900/7BC67E/ffffff?text=Squidward+Art" data-lightbox-alt="章鱼哥的艺术">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">章鱼哥的艺术</p></div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="scene">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/FF6B6B/ffffff?text=Money+Dance" class="card-img-top" alt="蟹老板招牌的金钱舞" data-lightbox="https://placehold.co/1200x900/FF6B6B/ffffff?text=Money+Dance" data-lightbox-alt="蟹老板的金钱舞">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">蟹老板的金钱舞</p></div>
+          </article>
+        </div>
+
+        <!-- 同人创作 -->
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="fanart">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/FF8C61/ffffff?text=FanArt+Tribute" class="card-img-top" alt="粉丝绘制的海绵宝宝全家福" data-lightbox="https://placehold.co/1200x900/FF8C61/ffffff?text=FanArt+Tribute" data-lightbox-alt="粉丝全家福">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">比奇堡全家福</p></div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="fanart">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/A0522D/ffffff?text=Pixel+Sponge" class="card-img-top" alt="像素风格海绵宝宝" data-lightbox="https://placehold.co/1200x900/A0522D/ffffff?text=Pixel+Sponge" data-lightbox-alt="像素海绵宝宝">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">像素海绵宝宝</p></div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="fanart">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/2E8B57/ffffff?text=Watercolor+Style" class="card-img-top" alt="水彩风格比奇堡" data-lightbox="https://placehold.co/1200x900/2E8B57/ffffff?text=Watercolor+Style" data-lightbox-alt="水彩比奇堡">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">水彩比奇堡</p></div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-gallery-category="fanart">
+          <article class="card gallery-card h-100">
+            <img src="https://placehold.co/600x450/FFD700/1A759F?text=Anime+Sponge" class="card-img-top" alt="日式动漫风海绵宝宝" data-lightbox="https://placehold.co/1200x900/FFD700/1A759F?text=Anime+Sponge" data-lightbox-alt="动漫风海绵宝宝">
+            <div class="card-body text-center"><p class="card-text small mb-0 fw-bold">动漫风海绵宝宝</p></div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer pt-5 pb-4 mt-5" aria-label="页脚导航">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h6><i class="bi bi-water" aria-hidden="true"></i> 海绵宝宝主题网站</h6>
+          <p class="small">一个为海绵宝宝粉丝打造的专属社区，提供角色介绍、剧集浏览、图鉴欣赏以及粉丝互动功能。</p>
+        </div>
+        <div class="col-md-4">
+          <h6>快速导航</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i> 首页</a></li>
+            <li><a href="characters.html"><i class="bi bi-people" aria-hidden="true"></i> 人物介绍</a></li>
+            <li><a href="episodes.html"><i class="bi bi-collection-play" aria-hidden="true"></i> 剧集列表</a></li>
+            <li><a href="gallery.html"><i class="bi bi-images" aria-hidden="true"></i> 比奇堡图鉴</a></li>
+            <li><a href="contact.html"><i class="bi bi-envelope" aria-hidden="true"></i> 联系我们</a></li>
+            <li><a href="about.html"><i class="bi bi-info-circle" aria-hidden="true"></i> 关于我们</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>声明</h6>
+          <p class="small">本网站为 Web前端框架课程大作业，版权归《海绵宝宝》原作者 Stephen Hillenburg 及 Nickelodeon 所有。</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="text-center small mb-0">&copy; 2025 SpongeBob Fan Site. 比奇堡的温暖午后.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
