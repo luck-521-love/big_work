@@ -205,15 +205,34 @@ a:hover {
 }
 
 /* ---------- 轮播 ---------- */
-.carousel {
+.carousel-wrapper {
+  padding-left: 0;
+  padding-right: 0;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.carousel-wrapper .carousel {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.carousel-inner {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 
 .carousel-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  height: 480px;
+  object-position: center;
+}
+
+.carousel-item:first-child img {
+  object-position: top center;
 }
 
 .carousel-caption {
@@ -889,12 +908,19 @@ textarea.form-control {
 
 /* ---------- 响应式 ---------- */
 @media (max-width: 767.98px) {
-  .carousel-item img {
-    height: 280px;
+
+  .carousel-wrapper {
+    border-radius: var(--radius-md);
+  }
+
+  .carousel-wrapper .carousel,
+  .carousel-inner {
+    border-radius: var(--radius-md);
   }
 
   .carousel-caption {
     padding: 2.5rem 1.25rem 1.25rem;
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
   }
 
   .carousel-caption h2 {
@@ -930,9 +956,6 @@ textarea.form-control {
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .carousel-item img {
-    height: 380px;
-  }
 
   .gallery-card .card-img-top {
     height: 180px;
